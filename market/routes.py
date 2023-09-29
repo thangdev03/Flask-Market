@@ -19,7 +19,7 @@ def register_page():
     if form.validate_on_submit():
         user_to_create = User(
             username=form.username.data,
-            email=form.email_address.data,
+            email_address=form.email_address.data,
             password_hash=form.password1.data            
         )
         # Need form.hidden_tag() in html register page to do this
