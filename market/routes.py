@@ -20,7 +20,7 @@ def register_page():
         user_to_create = User(
             username=form.username.data,
             email_address=form.email_address.data,
-            password_hash=form.password1.data            
+            password=form.password1.data            
         )
         # Need form.hidden_tag() in html register page to do this
         db.session.add(user_to_create)
