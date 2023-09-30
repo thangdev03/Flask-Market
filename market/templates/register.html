@@ -26,6 +26,14 @@
             {{ form.password2(class="form-control mb-2", placeholder='Confirm Password') }}
 
             <br>
+
+            <div class="checkbox mb-3">
+                <h6>
+                     Already have an account?
+                     <a class="btn btn-sm btn-secondary ml-1" href="{{ url_for('login_page') }}">Log In</a>
+                </h6>
+             </div>
+ 
             {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
         </form>
    </div>
