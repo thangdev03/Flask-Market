@@ -21,7 +21,7 @@
                 <th scope="row">{{ item.id }}</th>
                 <td>{{ item.name }}</td>
                 <td>{{ item.barcode }}</td>
-                <td>{{ item.price }}</td>
+                <td>{{ "{:,} VND".format(item.price) }}</td>
                 <td>
                     <button class="btn btn-outline btn-info">More Info</button>
                     <button class="btn btn-outline btn-success">Purchase this Item</button>
