@@ -28,4 +28,4 @@ class PurchaseItemForm(FlaskForm):
     submit = SubmitField(label='Confirm Purchase')
 
 class SellItemForm(FlaskForm):
-    submit = SubmitField(label='Confirm Sell Item')
+    submit = SubmitField(label='Confirm Sell')
